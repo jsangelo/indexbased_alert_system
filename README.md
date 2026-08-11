@@ -6,8 +6,6 @@ doi:10.1371/journal.pone.0356739
 
 This document provides a guide for using four Python scripts developed for data preprocessing, geocoding, spatial and temporal data clustering, and characterization of the generated clusters. The workflow is sequential: the first script prepares the data, the second adds geocoding information, the third performs the clustering, and the fourth characterizes the generated clusters.
 
-The scripts are available at the [Link](https://gitlab.fiocruz.br/modeling/projeto-alertas-inteligentes/source-code/-/tree/main/common)
-
 ### Script Descriptions
 
 1. **01_pre_process.py**
