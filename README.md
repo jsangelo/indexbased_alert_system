@@ -59,7 +59,6 @@ The analysis follows a sequential workflow consisting of four main steps:
 4. **Cluster characterization** – calculates the attributes used to characterize the generated clusters.
 5. **Cluster geocoding** – adds geographic information to the generated clusters (only for validation purposes).
 6. **Optimization of the Z-Alert Index** – multiobjective optimization for optimizing cluster attribute weights.
-7. **Validation** - validation of the Z-Alert Index using data from the BMoH containing records of YF cases.
 
 The scripts should be executed in the following order:
 
@@ -83,9 +82,6 @@ Input data
     │
     ▼
 06. Optimization of the Z-Alert Index
-    │
-    ▼
-07. Validation
 ```
 
 # Reproducibility
