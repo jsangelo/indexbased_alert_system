@@ -94,12 +94,14 @@ def optimize_alert_index_weights(path, time_limit, distance_limit):
         file_solutions = f'{output_dir}/_solution_vectors_{time_limit}d_{distance_limit}km.txt'
         with open(file_solutions, 'w') as arquivo: 
             for s in solution: 
-                arquivo.write(f'{s},\n') 
+                conteudo = "[" + "," . join(f"{val:.9f}" for val in s) + "]"
+                arquivo.write(f'{conteudo},\n') 
             
         file_objectives = f'{output_dir}/_objective_vectors_{time_limit}d_{distance_limit}km.txt'
         with open(file_objectives, 'w') as arquivo: 
             for so in solution_obj: 
-                arquivo.write(f'{so},\n') 
+                conteudo = "[" + "," . join(f"{val:.9f}" for val in so) + "]"
+                arquivo.write(f'{conteudo},\n') 
 
         print(f"Solutions successfully saved in '{file_solutions}' e '{file_objectives}'.")
 

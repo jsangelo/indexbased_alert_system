@@ -148,8 +148,8 @@ if __name__ == "__main__":
     # Configurações
     # ==========================================================
 
-    path = "../data"
-    output_dir = f"{path}/results/final_results"
+    path = "../data/results"
+    output_dir = f"{path}/final_results"
     os.makedirs(output_dir, exist_ok=True)
 
     # Parâmetros de clusterização

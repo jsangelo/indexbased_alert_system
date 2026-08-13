@@ -90,7 +90,7 @@ if __name__ == '__main__':
     output_dir = f"{path}/results"
     os.makedirs(output_dir, exist_ok=True)
     
-    input_file = f'{path}/{file}.csv'
+    input_file = f'{output_dir}/{file}.csv'
     municipios_shp = f'{path}/BR_Municipios_2023/BR_Municipios_2023.shp'
     uf_shp = f'{path}/BR_UF_2023/BR_UF_2023.shp'
 
