@@ -99,13 +99,36 @@ Output data
 
 ```
 
-# Reproducibility
+## Reproducibility
 
-The scripts in this repository demonstrate the complete analytical workflow used in the study. 
+The scripts in this repository implement the complete analytical workflow used in the study.
 
-To protect sensitive geolocated data, the original dataset cannot be publicly distributed. Instead, we provide a synthetic testing dataset (`randomized_records_for_testing.csv`) that mirrors the structure and format of the original data. Users can execute all scripts using this file to verify code functionality.
+To protect sensitive geolocated data, the original dataset cannot be publicly distributed. Instead, we provide a synthetic testing dataset (`randomized_records_for_testing.csv`) that mirrors the structure and format of the original data. Users can run all scripts using this file to verify the functionality of the code.
 
-Note that outputs generated from the randomized dataset will differ from the figures and tables presented in the publication. The complete dataset required to reproduce the exact study results is available upon request through the institutional data-access procedure described above in the Data Availability statement.
+### Step 2 — Geocoding
+
+Step 2 of the workflow requires geospatial data from the **Brazilian Institute of Geography and Statistics (IBGE)** to obtain the municipality-level geocodes corresponding to the locations recorded in the SISS-Geo database.
+
+The required IBGE datasets can be downloaded from the [IBGE repository](https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2023/Brasil/). Download the following two files:
+
+* `BR_Municipios_2023.zip`
+* `BR_UF_2023.zip`
+
+After downloading the files, extract their contents into the following directories within this repository:
+
+```text
+data/
+├── BR_Municipios_2023/
+└── BR_UF_2023/
+```
+
+The extracted files should be placed directly in their respective directories before running the geocoding scripts.
+
+> **Note:** The IBGE geospatial datasets are periodically updated. For the analyses presented in this study, we used the 2023 version of the IBGE datasets.
+
+### Reproducibility and Data Availability
+
+Please note that outputs generated from the synthetic testing dataset will differ from the results presented in the publication. The complete dataset required to reproduce the exact study results is available upon request through the institutional data-access procedure described in the **Data Availability** statement.
 
 ---
 
