@@ -109,7 +109,7 @@ To protect sensitive geolocated data, the original dataset cannot be publicly di
 
 Step 2 of the workflow requires geospatial data from the **Brazilian Institute of Geography and Statistics (IBGE)** to obtain the municipality-level geocodes corresponding to the locations recorded in the SISS-Geo database.
 
-The required IBGE datasets can be downloaded from the [IBGE repository](https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2023/Brasil/). Download the following two files:
+The required IBGE datasets can be downloaded from the [IBGE repository](https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2023/Brasil/). Download and extract the following two ZIP files:
 
 * `BR_Municipios_2023.zip`
 * `BR_UF_2023.zip`
